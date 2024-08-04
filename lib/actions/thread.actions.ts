@@ -21,7 +21,6 @@ export async function createThread({
 }: Params) {
   try {
     connectToDatabase();
-    console.log(text, author);
 
     const createdThread = await Thread.create({
       text,
